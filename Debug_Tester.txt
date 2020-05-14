@@ -1,0 +1,84 @@
+---- Minecraft Profiler Results ----
+// Am I not running fast enough? :(
+
+Version: 1.15.2
+Time span: 1496054 ms
+Tick span: 29715 ticks
+// This is approximately 19.86 ticks per second. It should be 20 ticks per second
+
+--- BEGIN PROFILE DUMP ---
+
+[00] tick(29715/1) - 97.11%/97.11%
+[01] |   levels(29715/1) - 88.47%/85.92%
+[02] |   |   Alsedge minecraft:overworld(29715/1) - 99.91%/85.84%
+[03] |   |   |   tick(29715/1) - 100.00%/85.84%
+[04] |   |   |   |   entities(29715/1) - 92.21%/79.15%
+[05] |   |   |   |   |   regular(29715/1) - 80.16%/63.44%
+[06] |   |   |   |   |   |   #getEntities 1/0
+[06] |   |   |   |   |   |   #getChunk 40/0
+[06] |   |   |   |   |   |   tick(52985619/1783) - 95.70%/60.71%
+[07] |   |   |   |   |   |   |   #getEntities 19/0
+[07] |   |   |   |   |   |   |   #getChunk 324/0
+[07] |   |   |   |   |   |   |   minecraft:villager(1897272/64) - 21.06%/12.78%
+[08] |   |   |   |   |   |   |   |   #tickNonPassenger 1273257/42
+[08] |   |   |   |   |   |   |   |   #getChunk 102288/3
+[08] |   |   |   |   |   |   |   |   #tickPassenger 624015/21
+[08] |   |   |   |   |   |   |   |   ai(1897272/64) - 71.06%/9.08%
+[09] |   |   |   |   |   |   |   |   |   newAi(1897272/64) - 99.54%/9.04%
+[10] |   |   |   |   |   |   |   |   |   |   mob tick(1897272/64) - 90.18%/8.15%
+[11] |   |   |   |   |   |   |   |   |   |   |   brain(1897272/64) - 99.51%/8.11%
+[12] |   |   |   |   |   |   |   |   |   |   |   |   #getEntities 1875304/63
+[12] |   |   |   |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 2981400/100
+[12] |   |   |   |   |   |   |   |   |   |   |   |   #getChunk 47433345/1596
+[12] |   |   |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 86.08%/6.98%
+[12] |   |   |   |   |   |   |   |   |   |   |   |   pathfind(70289/2) - 13.92%/1.13%
+[13] |   |   |   |   |   |   |   |   |   |   |   |   |   #getChunkNow 4463413/150
+[12] |   |   |   |   |   |   |   |   |   |   |   |   move(199/0) - 0.01%/0.00%
+[13] |   |   |   |   |   |   |   |   |   |   |   |   |   #getEntities 199/0
+[13] |   |   |   |   |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 40/0
+[13] |   |   |   |   |   |   |   |   |   |   |   |   |   #getChunk 18723/0
+[12] |   |   |   |   |   |   |   |   |   |   |   |   rest(199/0) - 0.00%/0.00%
+[13] |   |   |   |   |   |   |   |   |   |   |   |   |   #getChunk 2650/0
+[11] |   |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 0.49%/0.04%
+[10] |   |   |   |   |   |   |   |   |   |   targetSelector(1897272/64) - 3.29%/0.30%
+[11] |   |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 35.67%/0.11%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalCleanup(1897272/64) - 35.14%/0.10%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalUpdate(1897272/64) - 17.38%/0.05%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalTick(1897272/64) - 11.81%/0.04%
+[10] |   |   |   |   |   |   |   |   |   |   goalSelector(1897272/64) - 2.51%/0.23%
+[11] |   |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 45.12%/0.10%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalCleanup(1897272/64) - 20.91%/0.05%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalUpdate(1897272/64) - 20.26%/0.05%
+[11] |   |   |   |   |   |   |   |   |   |   |   goalTick(1897272/64) - 13.71%/0.03%
+[10] |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 2.22%/0.20%
+[10] |   |   |   |   |   |   |   |   |   |   controls(1897272/64) - 1.46%/0.13%
+[11] |   |   |   |   |   |   |   |   |   |   |   unspecified(1897272/64) - 68.06%/0.09%
+[11] |   |   |   |   |   |   |   |   |   |   |   look(1897272/64) - 12.16%/0.02%
+[11] |   |   |   |   |   |   |   |   |   |   |   move(1897272/64) - 11.10%/0.01%
+[12] |   |   |   |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 4361/0
+[12] |   |   |   |   |   |   |   |   |   |   |   |   #getChunk 93390/3
+[11] |   |   |   |   |   |   |   |   |   |   |   jump(1897272/64) - 8.68%/0.01%
+[10] |   |   |   |   |   |   |   |   |   |   navigation(1897272/64) - 0.24%/0.02%
+[11] |   |   |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 8161/0
+[11] |   |   |   |   |   |   |   |   |   |   |   #getChunk 181259/6
+[10] |   |   |   |   |   |   |   |   |   |   sensing(1897272/64) - 0.11%/0.01%
+
+
+--- END PROFILE DUMP ---
+
+-- Counter: tickPassenger --
+[00] root total:0/655673 average: 0/22
+[01] |   tick total:0/655673 average: 0/22
+[02] |   |   levels total:0/655673 average: 0/22
+[03] |   |   |   Alsedge minecraft:overworld total:0/655673 average: 0/22
+[04] |   |   |   |   tick total:0/655673 average: 0/22
+[05] |   |   |   |   |   entities total:0/655673 average: 0/22
+[06] |   |   |   |   |   |   regular total:0/655673 average: 0/22
+[07] |   |   |   |   |   |   |   tick total:0/655673 average: 0/22
+[08] |   |   |   |   |   |   |   |   minecraft:villager total:624015/624015 average: 21/21
+[08] |   |   |   |   |   |   |   |   minecraft:zombie total:29715/29715 average: 1/1
+[08] |   |   |   |   |   |   |   |   minecraft:skeleton total:1943/1943 average: 0/0
+
+
+--- END COUNTER DUMP ---
+
